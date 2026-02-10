@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личный кабинет — Vinyl Store</title>
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a href="../index.html" class="logo">Vinyl</a>
+    <ul class="nav-list">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="about.html">О магазине</a></li>
+      <li><a href="account.html">Личный кабинет</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="cart.html">Корзина</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-content">
+  <h1>Личный кабинет</h1>
+
+  <div class="account-wrapper">
+    <div class="account-left">
+      <form class="account-form" id="accountForm">
+        <label>
+          Имя
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Адрес доставки
+          <input type="text" name="address" required>
+        </label>
+
+        <label>
+          Дополнительная информация
+          <input type="text" name="additional">
+        </label>
+
+        <button type="submit" class="btn">Создать аккаунт</button>
+      </form>
+
+      <div class="account-view" id="accountView" style="display:none;">
+        <p><strong>Имя:</strong> <span id="viewName"></span></p>
+        <p><strong>Адрес:</strong> <span id="viewAddress"></span></p>
+        <p><strong>Дополнительно:</strong> <span id="viewAdditional"></span></p>
+
+        <button class="btn" id="editBtn">Редактировать</button>
+      </div>
+    </div>
+
+    <div class="account-right">
+      <img src="https://i.cdn01.ru/files/users/images/33/3f/333f88c59bc1506b7c6e47f124dcfb87.gif" alt="Vinyl">
+      <p>Добро пожаловать в ваш личный кабинет! Здесь вы можете редактировать данные, просматривать историю заказов и управлять своими настройками.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Vinyl Store</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
